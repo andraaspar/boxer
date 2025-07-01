@@ -1,0 +1,57 @@
+.ccc_menu {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+
+	appearance: base-select;
+	border: 2px outset white;
+	border-radius: 0;
+	padding: 1px 5px;
+	background: lightgray;
+
+	&:open {
+		border-style: inset;
+	}
+
+	&::picker-icon {
+		display: none;
+	}
+
+	&::picker(select) {
+		appearance: base-select;
+		background: lightgray;
+		border: 1px outset white;
+		overflow: auto;
+		width: fit-content;
+	}
+}
+
+option {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+
+	/* display: flex;
+	gap: 5px; */
+	background: lightgray;
+	padding: 1px 5px;
+
+	&:hover {
+		background: darkslategray;
+		color: white;
+	}
+	&:active {
+		background: black;
+		color: white;
+	}
+
+	&[hidden] {
+		display: none !important;
+	}
+
+	&::checkmark {
+		display: none !important;
+	}
+}

@@ -1,0 +1,8 @@
+.ccc_toolbar {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1px;
+	padding: 1px;
+	background: lightgray;
+	border: 1px outset white;
+}
